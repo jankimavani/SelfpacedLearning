@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Modules Styles */
+#modules {
+    flex-basis: 30%;
+}
+
+#modules h2 {
+    color: #333;
+}
+
+#modules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#modules li {
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#modules li:hover {
+    background-color: #eee;
+}
+
+#modules li[data-id] {
+    cursor: pointer;
+}
+
+#modules li[data-id]:hover {
+    background-color: #ddd;
+}
+
+/* Content Styles */
+#content {
+    flex-basis: 65%;
+}
+
+#content h2 {
+    color: #333;
+}
+
+#moduleContent {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Progress Styles */
+#progress {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Interactive Learning Styles */
+#interactive {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#interactive h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#interactive h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+#videoLesson,
+#quiz,
+#assignment {
+    margin-top: 20px;
+}
+
+#videoLesson iframe {
+    width: 100%;
+    height: 315px;
+    border: 0;
+}
+
+#quizForm {
+    margin-top: 10px;
+}
+
+#quizForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#quizForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#quizForm input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#quizForm input[type="submit"]:hover {
+    background-color: #555;
+}
+
+#quizResult,
+#assignmentResult {
+    margin-top: 20px;
+    color: #333;
+}
+
+#quizResult::before,
+#assignmentResult::before {
+    content: '\1F4DC'; /* Unicode for floppy disk (save) icon */
+    margin-right: 5px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn at Your Pace</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Course: Introduction to Programming</h1>
+        <div id="progress">Progress: 0%</div>
+    </header>
+
+    <main>
+        <section id="modules">
+            <h2>Modules</h2>
+            <ul>
+                <li data-id="1">Module 1: Introduction to Programming</li>
+                <li data-id="2">Module 2: Variables and Data Types</li>
+                <li data-id="3">Module 3: Control Flow</li>
+                <li data-id="4">Module 4: Functions</li>
+            </ul>
+        </section>
+
+        <section id="content">
+            <h2>Module Content</h2>
+            <div id="moduleContent">Select a module to begin learning.</div>
+        </section>
+    </main>
+
+    <section id="interactive">
+        <h2>Interactive Learning</h2>
+        <div id="videoLesson">
+            <h3>Video Lesson</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="quiz">
+            <h3>Quiz</h3>
+            <form id="quizForm">
+                <label for="q1">What is a variable?</label>
+                <input type="text" id="q1" name="q1" required>
+                <br>
+
+                <label for="q2">What is a loop?</label>
+                <input type="text" id="q2" name="q2" required>
+                <br>
+
+                <input type="submit" value="Submit Quiz">
+            </form>
+            <div id="quizResult"></div>
+        </div>
+
+        <div id="assignment">
+            <h3>Assignment</h3>
+            <p>Write a simple program to calculate the sum of two numbers in your preferred programming language.</p>
+            <textarea id="assignmentSubmission" rows="4" cols="50"></textarea>
+            <br>
+            <button onclick="submitAssignment()">Submit Assignment</button>
+            <div id="assignmentResult"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

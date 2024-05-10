@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Add your additional styles if needed -->
+</head>
+<body>
+    <header class="site-header">
+        <div class="branding">
+            <h1>Browse Courses</h1>
+        </div>
+        <!-- Navigation or other header elements can be added if needed -->
+    </header>
+
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for courses...">
+            <button onclick="searchCourses()">Search</button>
+        </div>
+    </section>
+
+    <section class="course-list" id="courseList">
+        <!-- Initial 6 courses will be dynamically added here -->
+    </section>
+
+    <!-- More Courses Button -->
+    <div class="more-courses-button">
+        <button onclick="loadMoreCourses()">More Courses</button>
+    </div>
+
+    <!-- Your existing script tag -->
+    <script src="script.js"></script>
+
+    <script>
+        // Sample course data for demonstration
+        const initialCoursesData = [
+            { imgSrc: "course1.jpg", title: "Introduction to Web Development", description: "Learn the basics of web development, including HTML, CSS, and JavaScript." },
+            { imgSrc: "course2.jpg", title: "Data Science Fundamentals", description: "Explore the world of data science and learn essential skills for analyzing data." },
+            // Add more initial course data as needed
+        ];
+
+        // Sample more course data for demonstration
+        const moreCoursesData = [
+            { imgSrc: "course7.jpg", title: "Advanced Web Development", description: "Take your web development skills to the next level." },
+            { imgSrc: "course8.jpg", title: "Artificial Intelligence Essentials", description: "Introduction to AI and its applications in various industries." },
+            // Add more course data as needed
+        ];
+
+        // Function to load initial courses
+        function loadInitialCourses() {
+            const courseList = document.getElementById("courseList");
+
+            // Append initial courses to the course list
+            initialCoursesData.forEach(courseData => {
+                const courseElement = createCourseElement(courseData);
+                courseList.appendChild(courseElement);
+            });
+        }
+
+        // Function to load more courses
+        function loadMoreCourses() {
+            const courseList = document.getElementById("courseList");
+
+            // Append more courses to the course list
+            moreCoursesData.forEach(courseData => {
+                const courseElement = createCourseElement(courseData);
+                courseList.appendChild(courseElement);
+            });
+        }
+
+        // Function to create a course element
+        function createCourseElement(courseData) {
+            const course = document.createElement("div");
+            course.className = "course";
+
+            const img = document.createElement("img");
+            img.src = courseData.imgSrc;
+            img.alt = "Course Image";
+            course.appendChild(img);
+
+            const details = document.createElement("div");
+            details.className = "course-details";
+
+            const title = document.createElement("h2");
+            title.textContent = courseData.title;
+            details.appendChild(title);
+
+            const description = document.createElement("p");
+            description.textContent = courseData.description;
+            details.appendChild(description);
+
+            const enrollButton = document.createElement("a");
+            enrollButton.href = "#"; // Add your enrollment link
+            enrollButton.textContent = "Enroll Now";
+            details.appendChild(enrollButton);
+
+            course.appendChild(details);
+
+            return course;
+        }
+
+        // Load initial courses when the page is loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            loadInitialCourses();
+        });
+    </script>
+</body>
+</html>

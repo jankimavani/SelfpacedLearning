@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Self-Paced Learning</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <header class="site-header">
+        <div class="branding">
+            <h1>Self-Paced Learning</h1>
+        </div>
+        <nav class="main-navigation">
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="BrowseClass/index.html">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Self-Paced Learning</h1>
+            <p>Start your learning journey at your own pace with our wide range of courses.</p>
+            <a href="BrowseClass/index.html" class="cta-button">Browse Courses</a>
+        </div>
+    </section>
+    
+    
+    <section class="key-features">
+        <div class="feature">
+            <a href="WideCourse/course-selection.html">
+                <img src="icon1.png" alt="Icon">
+                <h2>Wide Course Selection</h2>
+            </a>
+            <p>Choose from a diverse range of courses in various domains.</p>
+        </div>
+        <div class="feature">
+            <a href="LearnAtYourPace/Index.html">
+                <img src="icon2.png" alt="Icon">
+                <h2>Learn at Your Pace</h2>
+            </a>
+            <p>Study when it's convenient for you, and progress at your own speed.</p>
+        </div>
+        <div class="feature">
+            <a href="InteractiveLearning/index.html">
+                <img src="icon3.png" alt="Icon">
+                <h2>Interactive Learning</h2>
+            </a>
+            <p>Engage with video lessons, quizzes, and assignments.</p>
+        </div>
+        <div class="feature">
+            <a href="TrackYourProgress/index.html">
+                <img src="icon4.png" alt="Icon">
+                <h2>Track Your Progress</h2>
+            </a>
+            <p>Monitor your advancement, earn certificates, and celebrate milestones.</p>
+        </div>
+    </section>
+    
+    
+    
+    <section class="additional-courses">
+        <h2>Additional Courses</h2>
+        <div class="course">
+            <img src="course1.png" alt="Course Image">
+            <div class="course-details">
+                <h3>Photography Fundamentals</h3>
+                <p>Capture the world through your lens. Learn photography basics, composition, and photo editing.</p>
+                <a href="BrowseClass/index.html">Learn More</a>
+            </div>
+        </div>
+        <div class="course">
+            <img src="course2.png" alt="Course Image">
+            <div class="course-details">
+                <h3>Business Leadership Skills</h3>
+                <p>Develop leadership and management skills. Lead teams effectively and achieve organizational success.</p>
+                <a href="BrowseClass/index.html">Learn More</a>
+            </div>
+        </div>
+        <div class="course">
+            <img src="course3.png" alt="Course Image">
+            <div class="course-details">
+                <h3>Language Learning: Spanish</h3>
+                <p>Learn Spanish from scratch. Acquire language skills for travel, work, or personal enrichment.</p>
+                <a href="BrowseClass/index.html">Learn More</a>
+            </div>
+        </div>
+        <div class="course">
+            <img src="course4.png" alt="Course Image">
+            <div class="course-details">
+                <h3>Art History: From Renaissance to Modern Art</h3>
+                <p>Explore the world of art history, from the Renaissance to contemporary art movements.</p>
+                <a href="BrowseClass/index.html">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="about-us">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Self-Paced Learning, your destination for flexible and engaging online education. Our mission is to empower learners of all backgrounds to achieve their goals at their own pace. We offer a wide range of courses in various domains, making it easier for you to expand your knowledge and skills.</p>
+            <p>With interactive learning materials, video lessons, quizzes, and assignments, you can engage with the content in an immersive way. Monitor your progress, earn certificates, and celebrate your milestones with us. Join our community of motivated learners today!</p>
+        </div>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries related to Self-Paced Learning, feel free to reach out to us. We are here to assist you.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+        
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Self-Paced Learning</p>
+        </div>
+    </footer>
+    
+
+    <button id="scroll-to-top">Scroll to Top</button>
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Scroll to section when a navigation link is clicked
+            function scrollToSection(sectionId) {
+                const section = document.querySelector(sectionId);
+                window.scrollTo({
+                    top: section.offsetTop - 50, // Adjust the offset as needed
+                    behavior: 'smooth'
+                });
+            }
+
+            // Attach click event listeners to navigation links
+            const navLinks = document.querySelectorAll('.navbar a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const sectionId = link.getAttribute('href');
+                    scrollToSection(sectionId);
+                });
+            });
+
+            // Show/hide scroll-to-top button based on scroll position
+            const scrollButton = document.getElementById('scroll-to-top');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    scrollButton.style.display = 'block';
+                } else {
+                    scrollButton.style.display = 'none';
+                }
+            });
+
+            // Scroll to the top when the scroll-to-top button is clicked
+            scrollButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+
+   
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Fields</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Add your additional styles if needed -->
+</head>
+<body>
+    <header class="site-header">
+        <div class="branding">
+            <h1>Explore Fields</h1>
+        </div>
+        <!-- Navigation or other header elements can be added if needed -->
+    </header>
+
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for fields...">
+            <button onclick="searchFields()">Search</button>
+        </div>
+    </section>
+
+    <div id="fieldContainer" class="features-container"></div>
+    <div class="more-fields-button">
+        <button onclick="loadMoreFields()">More Fields</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Self-Paced Learning</p>
+        </div>
+    </footer>
+
+    <!-- <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="searchInputCourses" placeholder="Search for courses...">
+            <button onclick="searchCourses()">Search</button>
+        </div>
+    </section> -->
+
+    <div id="courseContainer" class="course-container"></div>
+
+    <script src="script.js"></script>
+    <script src="course-script.js"></script>
+</body>
+</html>

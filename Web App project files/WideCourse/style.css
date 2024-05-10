@@ -1,0 +1,132 @@
+/* Reset default styles for padding and margins */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a background color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the site header */
+.site-header {
+    background-color: #0078d7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.branding h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Style the search section */
+.search-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 70%;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Style the features container */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Style each feature */
+.feature {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.feature:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Style the feature details */
+.feature a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 20px;
+}
+
+.feature h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Style the more fields button */
+.more-fields-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.more-fields-button button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.more-fields-button button:hover {
+    background-color: #444;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content p {
+    margin: 0;
+}

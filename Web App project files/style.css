@@ -1,0 +1,437 @@
+/* Reset default styles for padding and margins */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a background color to the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the site header */
+.site-header {
+    background-color: #0078d7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.branding h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #0078d7;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+/* Style the key features section */
+.key-features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.feature {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* style.css */
+.login-container,
+.register-container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.login-container h2,
+.register-container h2 {
+    margin: 0 0 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+}
+
+button {
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+/* Updated Hero Section Styles */
+.hero {
+    background-image: url("your-background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #0078d7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #005ea5;
+}
+
+
+
+
+
+
+
+
+/* Updated Key Features Section Styles */
+.key-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.feature a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.feature a:hover {
+    color: #0078d7;
+}
+
+
+
+
+
+
+/* Updated Additional Courses Section Styles */
+.additional-courses {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f5f5f5; /* Background color */
+}
+
+.additional-courses h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.additional-courses .course {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    background-color: #fff; /* Background color */
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.additional-courses .course img {
+    max-width: 150px;
+    margin: 20px;
+}
+
+.additional-courses .course-details {
+    text-align: left;
+    padding: 20px;
+}
+
+.additional-courses .course-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Text color */
+}
+
+.additional-courses .course-details p {
+    color: #666; /* Text color */
+}
+
+.additional-courses .course-details a {
+    background-color: #0078d7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.additional-courses .course-details a:hover {
+    background-color: #005ea5;
+}
+
+/* Hover effect for course boxes */
+.additional-courses .course:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+/* About Us Section Styles */
+.about-us {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Contact Us Section Styles */
+.contact-us {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0078d7;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005ea5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+
+
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0078d7;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#scroll-to-top:hover {
+    background-color: #005ea5;
+}
